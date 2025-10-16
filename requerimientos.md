@@ -91,4 +91,5 @@ La base de datos de la app va a almacenar los datos del usuario cliente, los dat
 ## 7. Prueba de que funciona git.
 
 * Este texto es una prueba (Jorge Mendoza)
+* Este texto es otra prueba 2 (Jorge Mendoza)
 
