@@ -7,3 +7,6 @@ Los intengrantes de este proyecton son: Mario Wüstner: Analista QA
 
 Aqui estarán las ramas del desarrollo de este proyecto universitario para su visualización.
 Cualquier consulta por favor hacer al correo resc.development@gmail.com
+
+
+Hola uwu
