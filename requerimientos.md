@@ -93,7 +93,7 @@ La base de datos de la app va a almacenar los datos del usuario cliente, los dat
 * Este texto es una prueba (Jorge Mendoza)
 * Este texto es otra prueba 2 (Jorge Mendoza)
 * estamos en la kk (yeremi)
-*Hoy toca prieta (Mario)
+* Hoy toca prieta (Mario) 
 
 ## 8. Plazo deseado 
 
