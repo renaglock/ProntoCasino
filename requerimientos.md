@@ -92,4 +92,30 @@ La base de datos de la app va a almacenar los datos del usuario cliente, los dat
 
 * Este texto es una prueba (Jorge Mendoza)
 * Este texto es otra prueba 2 (Jorge Mendoza)
+* estamos en la kk (yeremi)
 
+
+## 8. Plazo deseado 
+
+* Fase de analsis y diseño: 2 semanas 
+* Desarrollo de pruebas: 6 semanas
+* Prueba piloto: 2 semanas 
+* Entrega final: 10 semanas desde el inicio del proyecto.
+
+## 9. Flujo principal del sistema 
+
+* inicio de sesion/registro 
+* visualizacion del menu 
+* seleccion del pedido 
+* pago
+* confirmacion 
+* generacion qr
+* notificacion para retiro 
+
+## Requisitos no funcionales 
+
+* Seguridad: cifrado de datos y autificacion 
+* Usabilidad: interfaz intuitiva y accesible 
+* compatibilidad: soporte para dispositivos Android 10+ e IOS 14+ 
+* Mantenibilidad: codigo modular y documentado
+* Escalabilidad: soporte para minimo 800 usuarios simultaneos  
