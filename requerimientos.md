@@ -55,6 +55,36 @@
 * **Producto (Product):** `nombre`, `descripcion`, `precio`, `stock`, `vendedor_id` (referencia al Vendedor)...
 * **Orden (Order):** `cliente_id`, `productos` (array de productos), `total`, `estado` (pendiente, enviado, entregado), `fecha`...
 * **Entrega(Delivery):** `vendeor_id`, `cliente_id`, `orden_id`, `sala`, `fecha`, `hora`, etc...
+## 1. Contexto de la situación
+
+En un casino universitario donde los estudiantes van a comer, a menudo se forman largas filas para ser atendidos.
+Esto genera congestión, molestias y pérdida de tiempo tanto para los clientes como para el personal del local.
+
+En este documento presentamos una **solución tecnológica** al problema: una **aplicación móvil (APP)** que permita la **interacción entre el cliente y el encargado de la caja**, facilitando la **reserva, compra y retiro de pedidos sin necesidad de hacer fila**.
+De esta manera, los clientes podrán **realizar sus pedidos con anticipación**, reduciendo el flujo de personas en el local y mejorando la experiencia general.
+
+---
+
+## 2. Lista de usuarios del sistema
+
+Los usuarios que van a utilizar la aplicación son:
+
+* Clientes (Acceso a la app para comprar un pedido de la tienda).
+* Cajero (Recepciona el pedido desde su propia APP, confirma el pedido o rechaza el pedido).
+* Administrador (Jefe del local que pueda tener acceso y tener vista de información de alto nivel).
+* Invitados (No necesitan registrarse en la APP, pueden pedir mientras hagan el pago del producto).
+
+## 3. Tipos de usuario o roles
+
+Roles de usuario que permite la APP:
+
+* Cliente normal (Necesita registrarse mediante su correo, contraseña y un nombre. Tiene acceso a los productos de la tienda para comprar y pagar).
+* Usuario Cajero (Tiene un perfil más alto para poder confirmar los pedidos y también puede cancelar los pedidos si se necesita. También puede tener acceso al inventario donde puede agregar o quitar productos).
+* Administrador (Tiene acceso al panel de administración de la tienda, donde puede otorgar permisos. También puede tener acceso a información con privilegios, como por ejemplo: estadísticas de venta, y tiene acceso a todos los permisos del cajero).
+
+## 4. Datos básicos que va a guardar la base de datos
+
+La base de datos de la app va a almacenar los datos del usuario cliente, los datos del usuario cajero, productos y datos del administrador.
 
 **Productos** (El producto que se tiene dentro de la tienda):
 
@@ -174,3 +204,4 @@ Basado en el MVP, se desglosarán las primeras historias de usuario y tareas té
 
 * Autenticación (Login/Registro).
 * CRUD básico del recurso principal (ej. `products`).
+* Escalabilidad: soporte para minimo 800 usuarios simultaneos  
