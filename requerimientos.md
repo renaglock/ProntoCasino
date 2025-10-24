@@ -1,11 +1,11 @@
 # TOMA DE REQUERIMIENTOS SIMPLE DE PUNTO CASINO UNIVERSIDAD
 
-## **1. Descripción del Cliente y Problema
+## **1. Descripción del Cliente y Problema**
 
 * **Cliente:** Nuestro cliente es cualquier persona que compre en cualquiera de los casinos de la Universidad Católica de Temuco.
 * **Problema Principal:** El problema principal nace en la cotidianidad de hacer fila para comprar algún producto en especifico, y al llegar a la caja sorprendernos con que éste se encuentra agotado. 
 
-## **2. Usuarios y Perfiles (Roles)
+## **2. Usuarios y Perfiles (Roles)**
 
 ### Lista de Usuarios
 * *Administrador*
@@ -23,7 +23,7 @@
     * *Descripción:* El comprador final que usa la plataforma.
     * *Permisos:* Registrarse, iniciar sesión, ver productos, agregar al carrito, realizar una compra, ver su historial de pedidos.
 
-## **3. Funciones Indispensables por Perfil
+## **3. Funciones Indispensables por Perfil**
 
 *Aquí se encuentran las funciones más importantes que debe tener cada perfil.*
 
@@ -43,14 +43,14 @@
 3.  Realizar un pedido (Checkout).
 4.  Pedir reparto a sala.
 
-## **4. Datos Básicos a Almacenar (Entidades)
+## **4. Datos Básicos a Almacenar (Entidades)**
 
 * **Usuario (User):** `nombre`, `email`, `password_hash`, `rol` (Admin, Vendedor, Cliente), `teléfono`, `carrera`. 
 * **Producto (Product):** `nombre`, `descripcion`, `precio`, `stock`, `vendedor_id` (referencia al Vendedor)...
 * **Orden (Order):** `cliente_id`, `productos` (array de productos), `total`, `estado` (pendiente, enviado, entregado), `fecha`...
 * **Entrega(Delivery):** `vendeor_id`, `cliente_id`, `orden_id`, `sala`, `fecha`, `hora`, etc...
 
-## **5. Lista de requisitos funcionales y no funcionales
+## **5. Lista de requisitos funcionales y no funcionales**
 
 **Funcionales**
 
@@ -65,7 +65,7 @@
 * Reservar producto.
 * Interfaz amigable y clara.
 
-## **6. Definición del MVP (qué incluye / qué queda para futuras versiones)
+## **6. Definición del MVP (qué incluye / qué queda para futuras versiones)**
 
 **Qué incluye:**
 
@@ -82,14 +82,14 @@
 * Uso de la APP desde una computadora (uso desde un navegador).
 * Estadisticas de venta (Métrica)
 
-## **7. Plazo deseado 
+## **7. Plazo deseado** 
 
 * Fase de analsis y diseño: 2 semanas.
 * Desarrollo de pruebas: 6 semanas
 * Prueba piloto: 2 semanas.
 * Entrega final: 10 semanas desde el inicio del proyecto.
 
-## **8. Flujo principal del sistema 
+## **8. Flujo principal del sistema**
 
 * Inicio de sesion/registro. 
 * Visualización del menu. 
@@ -168,11 +168,11 @@ Se ofrece:
 - Añadir una **sección de contacto o responsables** al final (nombre, rol, correo).  
 - Si es para un cliente, agregar logotipo y datos de la empresa.
 
-## 13. Próximos Pasos
+## **13. Próximos Pasos**
 
 Una vez aprobados los requerimientos y el alcance del MVP definidos en este documento, el equipo procederá con las siguientes fases:
 
-### 13.1 Fase de Diseño Funcional y Técnico (Entrega 2)
+### *13.1 Fase de Diseño Funcional y Técnico (Entrega 2)*
 
 El siguiente gran hito es la creación del documento `DISENO.md`, que incluirá:
 
@@ -182,7 +182,7 @@ El siguiente gran hito es la creación del documento `DISENO.md`, que incluirá:
 * **Estrategia de Caché:** Definición de qué datos se almacenarán en Redis y cómo se gestionará su invalidación.
 * **Wireframes:** Creación de mockups simples para las vistas clave del sistema.
 
-### 13.2 Configuración del Entorno de Desarrollo
+### *13.2 Configuración del Entorno de Desarrollo*
 
 En paralelo al diseño, se iniciarán las tareas de configuración técnica:
 
@@ -190,7 +190,7 @@ En paralelo al diseño, se iniciarán las tareas de configuración técnica:
 * Configuración de Docker (`docker-compose.yml`) para levantar los servicios (API, MongoDB, Redis).
 * Preparación del repositorio para el trabajo colaborativo (protección de la rama `develop`, plantillas de Pull Request).
 
-### 13.3 Planificación del Sprint 1
+### *13.3 Planificación del Sprint 1*
 
 Basado en el MVP, se desglosarán las primeras historias de usuario y tareas técnicas en el backlog. El Sprint 1 se enfocará en:
 
