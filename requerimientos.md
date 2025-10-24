@@ -1,11 +1,11 @@
 # TOMA DE REQUERIMIENTOS SIMPLE DE PUNTO CASINO UNIVERSIDAD
 
-## 1. Descripción del Cliente y Problema
+## **1. Descripción del Cliente y Problema
 
 * **Cliente:** Nuestro cliente es cualquier persona que compre en cualquiera de los casinos de la Universidad Católica de Temuco.
 * **Problema Principal:** El problema principal nace en la cotidianidad de hacer fila para comprar algún producto en especifico, y al llegar a la caja sorprendernos con que éste se encuentra agotado. 
 
-## 2. Usuarios y Perfiles (Roles)
+## **2. Usuarios y Perfiles (Roles)
 
 ### Lista de Usuarios
 * *Administrador*
@@ -23,7 +23,7 @@
     * *Descripción:* El comprador final que usa la plataforma.
     * *Permisos:* Registrarse, iniciar sesión, ver productos, agregar al carrito, realizar una compra, ver su historial de pedidos.
 
-## 3. Funciones Indispensables por Perfil
+## **3. Funciones Indispensables por Perfil
 
 *Aquí se encuentran las funciones más importantes que debe tener cada perfil.*
 
@@ -43,14 +43,14 @@
 3.  Realizar un pedido (Checkout).
 4.  Pedir reparto a sala.
 
-## 4. Datos Básicos a Almacenar (Entidades)
+## **4. Datos Básicos a Almacenar (Entidades)
 
 * **Usuario (User):** `nombre`, `email`, `password_hash`, `rol` (Admin, Vendedor, Cliente), `teléfono`, `carrera`. 
 * **Producto (Product):** `nombre`, `descripcion`, `precio`, `stock`, `vendedor_id` (referencia al Vendedor)...
 * **Orden (Order):** `cliente_id`, `productos` (array de productos), `total`, `estado` (pendiente, enviado, entregado), `fecha`...
 * **Entrega(Delivery):** `vendeor_id`, `cliente_id`, `orden_id`, `sala`, `fecha`, `hora`, etc...
 
-## 5. Lista de requisitos funcionales y no funcionales
+## **5. Lista de requisitos funcionales y no funcionales
 
 **Funcionales**
 
@@ -65,7 +65,7 @@
 * Reservar producto.
 * Interfaz amigable y clara.
 
-## 6. Definición del MVP (qué incluye / qué queda para futuras versiones)
+## **6. Definición del MVP (qué incluye / qué queda para futuras versiones)
 
 **Qué incluye:**
 
@@ -82,22 +82,22 @@
 * Uso de la APP desde una computadora (uso desde un navegador).
 * Estadisticas de venta (Métrica)
 
-## 7. Plazo deseado 
+## **7. Plazo deseado 
 
-* Fase de analsis y diseño: 2 semanas 
+* Fase de analsis y diseño: 2 semanas.
 * Desarrollo de pruebas: 6 semanas
-* Prueba piloto: 2 semanas 
+* Prueba piloto: 2 semanas.
 * Entrega final: 10 semanas desde el inicio del proyecto.
 
-## 8. Flujo principal del sistema 
+## **8. Flujo principal del sistema 
 
-* inicio de sesion/registro 
-* visualizacion del menu 
-* seleccion del pedido 
-* pago
-* confirmacion 
-* generacion qr
-* notificacion para retiro 
+* Inicio de sesion/registro. 
+* Visualización del menu. 
+* Selección del pedido. 
+* Pago.
+* Confirmación. 
+* Generacion QR.
+* Notificación para retiro. 
  
 ## **9. Definición de Alcance y Presupuesto**
 
