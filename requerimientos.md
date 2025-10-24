@@ -5,8 +5,6 @@
 * **Cliente:** Nuestro cliente es cualquier persona que compre en cualquiera de los casinos de la Universidad Católica de Temuco.
 * **Problema Principal:** El problema principal nace en la cotidianidad de hacer fila para comprar algún producto en especifico, y al llegar a la caja sorprendernos con que éste se encuentra agotado. 
 
----
-
 ## 2. Usuarios y Perfiles (Roles)
 
 ### Lista de Usuarios
@@ -24,8 +22,6 @@
 * **Usuario/Cliente:**
     * *Descripción:* El comprador final que usa la plataforma.
     * *Permisos:* Registrarse, iniciar sesión, ver productos, agregar al carrito, realizar una compra, ver su historial de pedidos.
-
----
 
 ## 3. Funciones Indispensables por Perfil
 
@@ -47,67 +43,12 @@
 3.  Realizar un pedido (Checkout).
 4.  Pedir reparto a sala.
 
----
-
 ## 4. Datos Básicos a Almacenar (Entidades)
 
 * **Usuario (User):** `nombre`, `email`, `password_hash`, `rol` (Admin, Vendedor, Cliente), `teléfono`, `carrera`. 
 * **Producto (Product):** `nombre`, `descripcion`, `precio`, `stock`, `vendedor_id` (referencia al Vendedor)...
 * **Orden (Order):** `cliente_id`, `productos` (array de productos), `total`, `estado` (pendiente, enviado, entregado), `fecha`...
 * **Entrega(Delivery):** `vendeor_id`, `cliente_id`, `orden_id`, `sala`, `fecha`, `hora`, etc...
-## 1. Contexto de la situación
-
-En un casino universitario donde los estudiantes van a comer, a menudo se forman largas filas para ser atendidos.
-Esto genera congestión, molestias y pérdida de tiempo tanto para los clientes como para el personal del local.
-
-En este documento presentamos una **solución tecnológica** al problema: una **aplicación móvil (APP)** que permita la **interacción entre el cliente y el encargado de la caja**, facilitando la **reserva, compra y retiro de pedidos sin necesidad de hacer fila**.
-De esta manera, los clientes podrán **realizar sus pedidos con anticipación**, reduciendo el flujo de personas en el local y mejorando la experiencia general.
-
----
-
-## 2. Lista de usuarios del sistema
-
-Los usuarios que van a utilizar la aplicación son:
-
-* Clientes (Acceso a la app para comprar un pedido de la tienda).
-* Cajero (Recepciona el pedido desde su propia APP, confirma el pedido o rechaza el pedido).
-* Administrador (Jefe del local que pueda tener acceso y tener vista de información de alto nivel).
-* Invitados (No necesitan registrarse en la APP, pueden pedir mientras hagan el pago del producto).
-
-## 3. Tipos de usuario o roles
-
-Roles de usuario que permite la APP:
-
-* Cliente normal (Necesita registrarse mediante su correo, contraseña y un nombre. Tiene acceso a los productos de la tienda para comprar y pagar).
-* Usuario Cajero (Tiene un perfil más alto para poder confirmar los pedidos y también puede cancelar los pedidos si se necesita. También puede tener acceso al inventario donde puede agregar o quitar productos).
-* Administrador (Tiene acceso al panel de administración de la tienda, donde puede otorgar permisos. También puede tener acceso a información con privilegios, como por ejemplo: estadísticas de venta, y tiene acceso a todos los permisos del cajero).
-
-## 4. Datos básicos que va a guardar la base de datos
-
-La base de datos de la app va a almacenar los datos del usuario cliente, los datos del usuario cajero, productos y datos del administrador.
-
-**Productos** (El producto que se tiene dentro de la tienda):
-
-* id_producto (La ID del producto, EMPA-01).
-* Nombre del producto (Empanada).
-* Precio del producto ($2.000 pesos).
-* Stock (Esto si hay inventario).
-
-**Pedido** (El pedido que hace el cliente):
-
-* id_pedido (ID del pedido del cliente).
-* nombre_cliente (Nombre de la persona que compra).
-* id_producto (Los productos que pide el cliente).
-* Nombre (Nombre del producto).
-* Cantidad (Cantidad de artículos que lleva el cliente).
-* Precio (Precio de los artículos).
-* Total de la venta (El total a pagar).
-
-**Usuarios** (Personal de la tienda):
-
-* id_usuario (La ID de la persona que trabaja en la tienda).
-* Nombre (Nombre de la persona).
-* Rol (Puede ser rol como: Administrador o Cajero).
 
 ## 5. Lista de requisitos funcionales y no funcionales
 
@@ -141,23 +82,14 @@ La base de datos de la app va a almacenar los datos del usuario cliente, los dat
 * Uso de la APP desde una computadora (uso desde un navegador).
 * Estadisticas de venta (Métrica)
 
-
-
-## 7. Prueba de que funciona git.
-
-* Este texto es una prueba (Jorge Mendoza)
-* Este texto es otra prueba 2 (Jorge Mendoza)
-* estamos en la kk (yeremi)
-* Hoy toca prieta (Mario) 
-
-## 8. Plazo deseado 
+## 7. Plazo deseado 
 
 * Fase de analsis y diseño: 2 semanas 
 * Desarrollo de pruebas: 6 semanas
 * Prueba piloto: 2 semanas 
 * Entrega final: 10 semanas desde el inicio del proyecto.
 
-## 9. Flujo principal del sistema 
+## 8. Flujo principal del sistema 
 
 * inicio de sesion/registro 
 * visualizacion del menu 
@@ -166,18 +98,8 @@ La base de datos de la app va a almacenar los datos del usuario cliente, los dat
 * confirmacion 
 * generacion qr
 * notificacion para retiro 
-
-## Requisitos no funcionales 
-
-* Seguridad: cifrado de datos y autificacion 
-* Usabilidad: interfaz intuitiva y accesible 
-* compatibilidad: soporte para dispositivos Android 10+ e IOS 14+ 
-* Mantenibilidad: codigo modular y documentado
-* Escalabilidad: soporte para minimo 800 usuarios simultaneos 
  
-#  Propuesta de Proyecto - Desarrollo de API REST (API-only)
-
-## **10. Definición de Alcance y Presupuesto**
+## **9. Definición de Alcance y Presupuesto**
 
 **Alcance acordado:**  
 Desarrollo exclusivo de una **API REST** utilizando **Node.js (Express)** y **MongoDB** como base de datos.  
@@ -193,7 +115,7 @@ No se incluye interfaz gráfica ni componentes visuales.
 
 **Total estimado:** CLP $3.600.000 (≈ USD $3.300)
 
-## **11. Propuesta Formal y Cronograma de Trabajo (API-only)**
+## **10. Propuesta Formal y Cronograma de Trabajo (API-only)**
 
 ### **Objetivo del proyecto**
 Desarrollar una **API REST** que optimice la gestión de pedidos y reduzca la congestión en el local mediante la digitalización del proceso de reservas, compras y validaciones por parte de los administradores.
@@ -223,7 +145,7 @@ Las herramientas principales serán: **Node.js**, **Express**, **MongoDB**, **Gi
 | Semana 3 | Configuración y pruebas con MongoDB | 1 semana | Base de datos conectada |
 | Semana 4–5 | Integración con Express y pruebas finales | 2 semanas | API operativa y documentada |
 
-## **12. Criterios de Aceptación**
+## **11. Criterios de Aceptación**
 
 El sistema será considerado **aceptado y completado** cuando cumpla los siguientes requisitos:
 
@@ -234,7 +156,7 @@ El sistema será considerado **aceptado y completado** cuando cumpla los siguien
 5. La documentación de endpoints está actualizada y accesible.  
 6. Las pruebas unitarias y de integración se completan con éxito.
 
-## **13. Soporte y Mantenimiento (opcional)**
+## **12. Soporte y Mantenimiento (opcional)**
 
 Se ofrece:  
 - **Inducción inicial:** sesión de capacitación para el uso e instalación del sistema.  
@@ -246,15 +168,11 @@ Se ofrece:
 - Añadir una **sección de contacto o responsables** al final (nombre, rol, correo).  
 - Si es para un cliente, agregar logotipo y datos de la empresa.
 
-**Autor:** Equipo de Desarrollo  
-**Fecha:** Octubre 2025  
-**Versión:** 1.0
-
-## 14. Próximos Pasos
+## 13. Próximos Pasos
 
 Una vez aprobados los requerimientos y el alcance del MVP definidos en este documento, el equipo procederá con las siguientes fases:
 
-### 1. Fase de Diseño Funcional y Técnico (Entrega 2)
+### 13.1 Fase de Diseño Funcional y Técnico (Entrega 2)
 
 El siguiente gran hito es la creación del documento `DISENO.md`, que incluirá:
 
@@ -264,7 +182,7 @@ El siguiente gran hito es la creación del documento `DISENO.md`, que incluirá:
 * **Estrategia de Caché:** Definición de qué datos se almacenarán en Redis y cómo se gestionará su invalidación.
 * **Wireframes:** Creación de mockups simples para las vistas clave del sistema.
 
-### 2. Configuración del Entorno de Desarrollo
+### 13.2 Configuración del Entorno de Desarrollo
 
 En paralelo al diseño, se iniciarán las tareas de configuración técnica:
 
@@ -272,7 +190,7 @@ En paralelo al diseño, se iniciarán las tareas de configuración técnica:
 * Configuración de Docker (`docker-compose.yml`) para levantar los servicios (API, MongoDB, Redis).
 * Preparación del repositorio para el trabajo colaborativo (protección de la rama `develop`, plantillas de Pull Request).
 
-### 3. Planificación del Sprint 1
+### 13.3 Planificación del Sprint 1
 
 Basado en el MVP, se desglosarán las primeras historias de usuario y tareas técnicas en el backlog. El Sprint 1 se enfocará en:
 
