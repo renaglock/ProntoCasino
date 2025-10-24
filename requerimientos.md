@@ -68,6 +68,11 @@ La base de datos de la app va a almacenar los datos del usuario cliente, los dat
 * Función donde el cajero pueda dar de baja un producto por falta de stock o por algún otro motivo.
 * Reservar producto.
 * Interfaz amigable y clara.
+* Seguridad: cifrado de datos y autificacion 
+* Interfaz intuitiva y accesible 
+* Soporte para dispositivos Android 10+ e IOS 14+ 
+* Codigo modular y documentado
+* Soporte para minimo 800 usuarios simultaneos  
 
 ## 6. Definición del MVP (qué incluye / qué queda para futuras versiones)
 
@@ -86,15 +91,6 @@ La base de datos de la app va a almacenar los datos del usuario cliente, los dat
 * Uso de la APP desde una computadora (uso desde un navegador).
 * Estadisticas de venta (Métrica)
 
-
-
-## 7. Prueba de que funciona git.
-
-* Este texto es una prueba (Jorge Mendoza)
-* Este texto es otra prueba 2 (Jorge Mendoza)
-* estamos en la kk (yeremi)
-* Hoy toca prieta (Mario) 
-
 ## 8. Plazo deseado 
 
 * Fase de analsis y diseño: 2 semanas 
@@ -112,10 +108,3 @@ La base de datos de la app va a almacenar los datos del usuario cliente, los dat
 * generacion qr
 * notificacion para retiro 
 
-## Requisitos no funcionales 
-
-* Seguridad: cifrado de datos y autificacion 
-* Usabilidad: interfaz intuitiva y accesible 
-* compatibilidad: soporte para dispositivos Android 10+ e IOS 14+ 
-* Mantenibilidad: codigo modular y documentado
-* Escalabilidad: soporte para minimo 800 usuarios simultaneos  
