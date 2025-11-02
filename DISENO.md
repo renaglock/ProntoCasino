@@ -1,47 +1,81 @@
-# DISEÑO FUNCIONAL Y TÉCNICO DE PRONTO CASINO UNIVERSIDAD
+#  DISEÑO FUNCIONAL Y TÉCNICO — PRONTO CASINO UNIVERSIDAD
 
+---
 
-# 1. Introducción
+## 1. Introducción
 
-**1.1 Objetivo**
+### **1.1 Objetivo**
 
-El objetivo de este documento es principalmente informar a nuestros desarroladores en que consiste la creacion de este software, detallado con diagramas para que no exista ninguna confucion al respecto a la hora de desarrolar, en este caso, la creacion de una API que pueda realizar CRUD en un casino universitario, creando solo el motor que está detrás (backend).
+El objetivo de este documento es informar a los desarrolladores sobre la creación del software, detallando los aspectos funcionales y técnicos, acompañados de diagramas que eviten cualquier confusión durante el desarrollo.  
+En este caso, se aborda la creación de una **API que permita realizar operaciones CRUD** dentro de un **casino universitario**, construyendo únicamente el motor que opera detrás del sistema (backend).
 
-**1.2 Alcance**
+---
 
-En este documento solo será efectiva y detallada el MVP mostrado en el anterior documento (REQUERIMIENTOS.MD), en este caso será solamente,  que el cliente pueda buscar un producto y reservarlo desde su terminal (Puede ser un cliente o un invitado), Que el cajero pueda dar el visto bueno y confirmar el pedido para posteriormente ser entregado, Incluir un menú de registro (Sign in) y un sistema de inventarios.
+### **1.2 Alcance**
 
-**1.3 Definiciones y acrónimos**
+Este documento cubre exclusivamente el **MVP** (Producto Mínimo Viable) descrito en el documento anterior **REQUERIMIENTOS.MD**.  
+El alcance incluye las siguientes funcionalidades:
 
-En este apartado del documento se mostrará las deficiones que usaremos en este trabajo y tambien acronimos representativos para el entendimiento de este documento, obviamente orientado a desarrolladores. 
+- Que el cliente (registrado o invitado) pueda **buscar un producto** y **reservarlo** desde su terminal.  
+- Que el **cajero** pueda **confirmar el pedido** y dar el visto bueno para su entrega.  
+- Incluir un **menú de registro (Sign In)** para clientes y empleados.  
+- Implementar un **sistema básico de inventario** para la gestión de productos disponibles.
 
-*CRUD: Crear, Leer, Actualizar y Borrar*
+---
 
-*API: Application Programming Interface*
+### **1.3 Definiciones y Acrónimos**
 
-# 2. Descripción general
+En esta sección se presentan las definiciones y acrónimos utilizados en este documento, orientados a desarrolladores:
 
-**2.1 Resumen del sistema**
+| **Término / Acrónimo** | **Definición** |
+|--------------------------|----------------|
+| **CRUD** | Crear, Leer, Actualizar y Borrar (Create, Read, Update, Delete). |
+| **API** | *Application Programming Interface*: conjunto de funciones y procedimientos que permiten la interacción entre aplicaciones. |
 
-La applicacion consiste en la reserva de productos alimenticios en un local tipo casino universitario, generando la reserva del producto, puede ir directo al local, pagar y retirar, generando ganacias a la empresa por muchos clientes que no tienen tiempo para selecionar en el mismo local. 
+---
 
-**2.2 Contexto y entorno**
+## 2. Descripción general
 
-El sistema se usa con el telefono celular, cliente abre la APP, se registra y puede ver una seleccion de productos, luego de reserva debe ir a la caja donde hace efectiva la venta usando la maquina transbank o pagando en efectivo y ya como uiltimo el cliente recive su producto. Dentro de las restricciones de entorno de momento la APP no cuenta con interfaz web desde el computador o sistema android o IOS.
+### **2.1 Resumen del sistema**
 
+La aplicación consiste en un sistema para **reservar productos alimenticios** en un local tipo **casino universitario**.  
+El cliente puede **seleccionar y reservar productos** desde su dispositivo móvil, acudir al local, **pagar** (mediante Transbank o efectivo) y **retirar su pedido**, optimizando el flujo de atención y aumentando las ventas al reducir los tiempos de espera.
 
-**2.3 Usuarios y roles**
+---
 
-## **2. Usuarios y Perfiles (Roles)**
+### **2.2 Contexto y entorno**
+
+El sistema está diseñado para su uso en **dispositivos móviles**.  
+El flujo básico es el siguiente:
+
+1. El cliente **abre la aplicación**, se **registra o inicia sesión**.  
+2. **Visualiza los productos** disponibles y **realiza una reserva**.  
+3. Acude al **mostrador**, donde el **cajero confirma y cobra** la orden.  
+4. Finalmente, el cliente **recibe su producto**.
+
+**Restricciones actuales:**
+- La aplicación **no cuenta con una versión web**.  
+- La interfaz se utilizará en entorno de **prueba local (development environment)**.
+
+---
+
+### **2.3 Usuarios y roles**
+
+#### **2. Usuarios y Perfiles (Roles)**
 
 | **Rol** | **Descripción** | **Permisos Principales** |
 |----------|------------------|---------------------------|
 | **Administrador** | Supervisa y controla todas las operaciones del sistema. | - Crear, editar y eliminar usuarios.<br>- Gestionar categorías de productos.<br>- Ver y exportar reportes de ventas.<br>- Configurar parámetros generales del sistema.<br>- Acceso completo a todos los módulos. |
-| **Vendedor** | Gestiona el inventario y las operaciones de venta diarias. | - Crear y editar productos.<br>- Ver órdenes pendientes y marcarlas como listas.<br>- Consultar historial de ventas propias.<br>- Gestionar stock y actualizaciones de precios. |
+| **Vendedor** | Gestiona el inventario y las operaciones de venta diarias. | - Crear y editar productos.<br>- Ver órdenes pendientes y marcarlas como listas.<br>- Consultar historial de ventas propias.<br>- Gestionar stock y actualizar precios. |
 | **Usuario / Cliente** | Comprador final que interactúa con la plataforma para adquirir productos. | - Registrarse e iniciar sesión.<br>- Ver productos y sus detalles.<br>- Agregar productos al carrito.<br>- Realizar compras y pagos.<br>- Consultar historial de pedidos.<br>- Actualizar su información personal. |
 
+---
 
-# 3. Requisitos funcionales
+## 3. Requisitos funcionales
+
+> *Esta sección se completará con el detalle de cada funcionalidad (CRUD de productos, reservas, registro de usuarios, control de inventario y flujo de ventas), junto con sus casos de uso y diagramas correspondientes.*
+
+---
 
 
 
