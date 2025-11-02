@@ -55,14 +55,17 @@
 **Funcionales**
 
 * El sistema debe registrar un pedido hecho por el cliente.
-* El sistema debe mostrar una lista de productos disponibles.
+* El sistema debe mostrar una lista de 
+productos disponibles.
+* Reservar producto.
 * El cajero puede confirmar un pedido en su app.
 * Incluye sistema de inventario básico.
+
 
 **No funcionales**
 
 * Función donde el cajero pueda dar de baja un producto por falta de stock o por algún otro motivo.
-* Reservar producto.
+
 * Interfaz amigable y clara.
 
 ## **6. Definición del MVP (qué incluye / qué queda para futuras versiones)**
@@ -71,20 +74,20 @@
 
 * Que el cliente pueda buscar un producto y reservarlo desde su terminal (Puede ser un cliente o un invitado).
 * Que el cajero pueda dar el visto bueno y confirmar el pedido para posteriormente ser entregado.
+* Incluir un menú de registro (Sign in).
+* Sistema de inventarios.
 
 **Qué queda para futuras versiones:**
 
-* Incluir un menú de registro (Sign in).
 * Menú colación diaria.
 * Notificaciones de promociones. Ejemplo: (Promo completo + bebida 20%).
-* Sistema de inventarios.
 * Producto del día o de la semana.
 * Uso de la APP desde una computadora (uso desde un navegador).
 * Estadisticas de venta (Métrica)
 
 ## **7. Plazo deseado** 
 
-* Fase de analsis y diseño: 2 semanas.
+* Fase de análisis y diseño: 2 semanas.
 * Desarrollo de pruebas: 6 semanas
 * Prueba piloto: 2 semanas.
 * Entrega final: 10 semanas desde el inicio del proyecto.
@@ -121,12 +124,12 @@ No se incluye interfaz gráfica ni componentes visuales.
 Desarrollar una **API REST** que optimice la gestión de pedidos y reduzca la congestión en el local mediante la digitalización del proceso de reservas, compras y validaciones por parte de los administradores.
 
 ### **Alcance**
-Incluye el desarrollo del backend (**API REST + MongoDB + Express**).  
+Incluye el desarrollo del backend (**API REST + MongoDB + REDIS + Express**).  
 No incluye frontend, interfaz de usuario ni aplicaciones móviles.
 
 ### **Metodología**
 Se empleará una metodología **ágil (Scrum)**, con trabajo colaborativo entre los desarrolladores y revisión continua de avances.  
-Las herramientas principales serán: **Node.js**, **Express**, **MongoDB**, **GitHub** y entornos locales de desarrollo.
+Las herramientas principales serán: **Node.js**, **Express**, **MongoDB**, **GitHub**.**REDIS** y entornos locales de desarrollo.
 
 ### **Entregables**
 - Código fuente del proyecto (repositorio GitHub).  
@@ -156,12 +159,12 @@ El sistema será considerado **aceptado y completado** cuando cumpla los siguien
 5. La documentación de endpoints está actualizada y accesible.  
 6. Las pruebas unitarias y de integración se completan con éxito.
 
-## **12. Soporte y Mantenimiento (opcional)**
+## **12. Soporte y Mantenimiento**
 
 Se ofrece:  
 - **Inducción inicial:** sesión de capacitación para el uso e instalación del sistema.  
 - **Garantía legal de 6 meses:** incluye soporte ante errores, dudas o ajustes menores relacionados con el funcionamiento del software.  
-- Posibilidad de **extender el mantenimiento** mediante un contrato adicional (actualizaciones, nuevas funciones o mejoras de seguridad).
+- Posibilidad de **extender el mantenimiento** mediante un contrato adicional (actualizaciones, nuevas funciones o mejoras de seguridad). (opcional)
 
 ###  **Sugerencias adicionales**
 - Incluir una sección de **riesgos y mitigaciones** (por ejemplo: “riesgo de retraso por cambios en los requisitos” → mitigación: reuniones semanales de control).  
