@@ -90,16 +90,16 @@ La base de datos de la app va a almacenar los datos del usuario cliente, los dat
 
 ## 7. Prueba de que funciona git.
 
-* Este texto es una prueba (Jorge Mendoza)
-* Este texto es otra prueba 2 (Jorge Mendoza)
-* estamos en la kk (yeremi)
-* Hoy toca prieta (Mario) 
+* Todo se debe subir a una branch develop antes que la main.
+* Se debe ingresar un commit referencial y simple.
+* Despues de cada jornada se debe hacer push de las features trabajadas.
+* Se debe mantener el entorno lo mas simple y pristino posible.
 
 ## 8. Plazo deseado 
 
-* Fase de analsis y diseño: 2 semanas 
-* Desarrollo de pruebas: 6 semanas
-* Prueba piloto: 2 semanas 
+* Fase de analsis y diseño: 2 semanas.
+* Desarrollo de pruebas: 6 semanas.
+* Prueba piloto: 2 semanas.
 * Entrega final: 10 semanas desde el inicio del proyecto.
 
 ## 9. Flujo principal del sistema 
